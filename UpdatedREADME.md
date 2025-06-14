@@ -46,6 +46,8 @@ node promiseVersion.js
 
 ## promiseVersion.js
 
+### NOTE:
+
 This version of the Summer Chores project rewrites the original callback-based implementation using **JavaScript Promises**.
 
 ### What's Different:
@@ -56,3 +58,19 @@ This version of the Summer Chores project rewrites the original callback-based i
 - The `doSummerChores` function uses `.then()` chaining and `.catch()` to handle the flow and possible errors.
 
 This approach improves readability and makes it easier to manage asynchronous code without deep nesting.
+
+## asyncAwaitVersion.js
+
+This version uses **async/await** to handle the asynchronous flow of the summer chores.
+
+### Benefits:
+
+- Cleaner and more readable than nested callbacks or chained `.then()` statements
+- Easier to handle `try/catch` logic for potential errors (like falling asleep!)
+- Each chore function remains the same as in the Promise version
+
+### Usage:
+
+```js
+doSummerChores("Jordan");
+```
